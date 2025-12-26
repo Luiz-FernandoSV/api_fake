@@ -9,7 +9,7 @@ getProdutos() -> aguarda os resultados do fetch, converte para JSON e retorna
 function buscarProdutos() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            fetch('/public//dados/produtos.json')
+            fetch('/public/dados/produtos.json')
             .then(resolve)
             .catch(()=>{
                 reject("erro ao buscar os produtos")
