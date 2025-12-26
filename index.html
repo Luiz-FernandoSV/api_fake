@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização de Dados</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container_principal">
+        <div class="container">
+            <div class="header">
+                <h1 class="titulo">Dashboard - API Fake</h1>
+                <button class="btn_carregar">Requisitar informações da API</button>
+            </div>
+
+            <div class="tabelas">
+                <div class="dados_users secDados">
+                    <h2>Informações de usuários</h2>
+                    <table class="tabela_users">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="dados_produtos secDados">
+                    <h2>Informações de produtos</h2>
+                    <table class="tabela_produtos">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="dados_pedidos secDados">
+                    <h2>Informações de pedidos</h2>
+                    <table class="tabela_pedidos">
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuário</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-modal" id="modal">
+            <div class="modal">
+                <h1 class="titulo_modal">------ Requisitando informações ------</h1>
+                <div class="colunas">
+                    <div class="coluna">
+                        <p id="procurando_users"></p>
+                        <img src="./public/imagens/carregando.gif" alt="Gif carregamento" class="gif">
+                    </div>
+                    <div class="coluna">
+                        <p id="procurando_produtos"></p>
+                        <img src="./public/imagens/carregando.gif" alt="Gif carregamento" class="gif">
+                    </div>
+                    <div class="coluna">
+                        <p id="procurando_pedidos"></p>
+                        <img src="./public/imagens/carregando.gif" alt="Gif carregamento" class="gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
